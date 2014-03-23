@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Multiple Selector on Multiple Container | jQuery URLive</title>
+
+<meta name="description" content="jQuery URLive, Multiple Selector on Multiple Container Demo Page" />
+<meta name="author" content="Mark Serbol" />
+
+<link rel="stylesheet" href="jquery.urlive.css">
+
+<style>
+.urlive-link {
+	margin:10px;
+}
+
+#container1, #container2 {
+	width:500px;
+}
+</style>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.urlive.js"></script>
+</head>
+
+<body>
+<h1>Multiple Selector on Multiple Container with just One Call</h1>
+
+<h2><a href="https://github.com/markserbol/urlive/blob/gh-pages/demo.html">See the code here</a></h2>
+
+<p class="selector">Selector 1. jQuery URLive — http://markserbol.github.io/urlive/</p>
+
+<p class="selector">Selector 2. Have you ever loved something so much it hurt? — http://www.theverge.com/2014/1/21/5307992/inside-the-mind-of-a-fanboy</p>
+<div id="container1">
+	<h2>Container 1</h2>
+</div>
+<div id="container2">
+	<h2>Container 2</h2>
+</div>
+
+<script>
+$('.selector').urlive({
+	container:'#container1, #container2',
+});
+</script>
+
+</body>
+</html>
