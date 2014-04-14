@@ -44,6 +44,10 @@ h3 {
 	font-size:25px;
 }
 
+h4 {
+	padding:10px 0;
+}
+
 table {
 	border:none;
 	border-collapse:collapse;
@@ -252,6 +256,40 @@ iframe {
 	overflow:hidden;
 }
 
+pre, code {
+	font-family: monospace, serif;
+	font-size: 1em;
+	font-family: Consolas, Menlo, monospace;
+	font-size: 14px;
+	background: #333;
+	color: white;
+}
+
+pre {
+	white-space: pre-wrap;
+	margin-top: 0;
+	margin-bottom: 1.0em;
+	padding: 0.8em;
+	border-radius: 5px;
+	
+}
+
+code {
+	padding: 0.2em 0.3em;
+	line-height: 1.2;
+	border-radius: 3px;
+}
+
+code * {
+	font-family: Consolas, Menlo, monospace;
+}
+
+pre code {
+	padding: 0;
+	line-height: 1.5;
+	background: none;
+}
+
 </style>
 
 <link href="demo_files/fontello-f5becfdc/css/webfonts.css" rel="stylesheet" />
@@ -279,7 +317,7 @@ iframe {
     		<i class="icon-fork"></i>
         <span>Fork me on GitHub</span>
       </a>
-      <span class="ver">Version 1.0.1</span>
+      <span class="ver">Version 1.0.4</span>
       <a class="cby" href="https://twitter.com/mark_serbol">
       	<span>
         	<span class="ff">Follow</span>
@@ -302,7 +340,7 @@ iframe {
   <section>
   	<p>jQuery URLive lets you easily create a live preview of any url base on its <em>Open Graph</em> properties and other details, similar to Facebook's post attachment.</p>
     
-    <p>This plugin doesn't only work on a <code>&lt;textarea&gt;</code> or <code>&lt;input&gt;</code> it also works on <code>&lt;a&gt;</code> tag and any other element with a URL on its content.</p>
+    <p>This plugin doesn't only work on a <code>&lt;textarea&gt;</code> or <code>&lt;input&gt;</code> it also works on <code>&lt;a&gt;</code> tag and any element with a URL on its content.</p>
     
     <p>It's pretty lightweight as data fetching is done asynchronously via <em>AJAX</em>. It also doesn't require any back-end or PHP file to crawl and get the data as it uses <em>YQL</em> to query and make request on other domains.</p>
     
@@ -316,11 +354,11 @@ iframe {
     
   	<h4>On <code>&lt;a&gt;</code> tag:</h4>
     
-    <iframe width="100%" height="300" src="http://jsfiddle.net/mark_s/j25rP/embedded/result,js,html,css/presentation" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+    <iframe width="100%" height="300" src="http://jsfiddle.net/mark_s/j25rP/32/embedded/result,js,html,css/presentation" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
     
     <h4>On a <code>&lt;textarea&gt;</code>:</h4>
     
-    <iframe width="100%" height="400" src="http://jsfiddle.net/mark_s/4KftC/3/embedded/result,js,html,css/presentation" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+    <iframe width="100%" height="400" src="http://jsfiddle.net/mark_s/4KftC/26/embedded/result,js,html,css/presentation" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
     
     <h4>On <em>elements</em> with a URL text:</h4>
     
