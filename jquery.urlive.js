@@ -1,5 +1,5 @@
 /*
- * jquery.urlive.js v1.0.3, jQuery URLive
+ * jquery.urlive.js v1.0.4, jQuery URLive
  *
  * Copyright 2014 Mark Serbol.   
  * Use, reproduction, distribution, and modification of this code is subject to the terms and 
@@ -153,9 +153,9 @@
 				
 				function draw(set){
 					
-					anchor = $('<a/>',{ class:'urlive-link', href: set.url, target: opts.target});
-					imgWrapper = $('<div/>',{ class:'urlive-img-wrapper'});
-					textWrapper = $('<div/>',{class:'urlive-text-wrapper'});
+					anchor = $('<a/>',{ 'class':'urlive-link', href: set.url, target: opts.target});
+					imgWrapper = $('<div/>',{ 'class':'urlive-img-wrapper'});
+					textWrapper = $('<div/>',{'class':'urlive-text-wrapper'});
 															
 					$.each(set, function(key, val){			
 						if(val){
@@ -189,7 +189,7 @@
 								});
 								
 							}else{
-								elem = $('<span/>', {class:'urlive-'+key, text: val});								
+								elem = $('<span/>', {'class':'urlive-'+key, text: val});								
 								elem.appendTo(textWrapper);
 							}	
 						}
